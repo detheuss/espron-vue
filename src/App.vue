@@ -1,28 +1,43 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <VueSlickCarousel v-bind="settings">
+    <div class="carousel-item" />
+    <div>HELLO WORLD</div>
+    <div>HELLO WORLD</div>
+    <div>HELLO WORLD</div>
+  </VueSlickCarousel>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import VueSlickCarousel from "vue-slick-carousel";
+import "vue-slick-carousel/dist/vue-slick-carousel.css";
+import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    VueSlickCarousel,
+  },
+  data() {
+    return {
+      settings: {
+        dots: true,
+        draggable: true,
+      },
+    };
+  },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+/* .carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid tomato;
+} */
+.carousel-item {
+  height: 90vh;
+  background-image: url("./assets/images/carousel-images/carousel-image-1.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  background-size: cover
 }
 </style>
