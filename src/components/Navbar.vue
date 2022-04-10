@@ -6,7 +6,7 @@
             variant="fade"
             class="espron-navbar"
         >
-            <b-navbar-brand href="#">Espron Projekt</b-navbar-brand>
+            <b-navbar-brand href="#"><img src="../assets/Logo/logo-trans-horizontal.png" class="espron-logo" alt=""></b-navbar-brand>
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav class="ml-auto">
                     <b-nav-item href="#">About Us</b-nav-item>
@@ -22,6 +22,10 @@
 </template>
 
 <style scoped>
+.espron-logo {
+    max-height: 3vh;
+    max-width: auto;
+}
 .espron-navbar {
     background-color: rgba(255, 255, 255, 0.7);
     position: absolute;
