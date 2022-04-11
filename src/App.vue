@@ -32,6 +32,20 @@
           </p>
         </div>
         <div class="text-block">
+          <h5>Case Study Picks -</h5>
+          <h2>Get Inspired</h2>
+          <div class="case-studies">
+            <CaseStudy
+              v-for="item in caseStudies"
+              :key="item.title"
+              :imgSrc="item.imgSrc"
+              :imgAlt="item.imgAlt"
+              :title="item.title"
+              :text="item.text"
+            />
+          </div>
+        </div>
+        <div class="text-block">
           <h3>How It Works -</h3>
           <div class="how-it-works-items">
             <div class="how-it-works-item">
@@ -80,10 +94,12 @@ import VueSlickCarousel from "vue-slick-carousel";
 import Navbar from "./components/Navbar.vue";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
+import CaseStudy from "./components/CaseStudy.vue";
 export default {
   components: {
     VueSlickCarousel,
     Navbar,
+    CaseStudy,
   },
   data() {
     return {
@@ -96,6 +112,29 @@ export default {
         fade: true,
         infinite: true,
       },
+      caseStudies: [
+        {
+          imgSrc: "https://i.imgur.com/AdzY13Q.jpg",
+          imgAlt: "Family House",
+          title: "Family House",
+          subtitle: "#renovation",
+          text: "An old thing becomes new if you detach it from what usually surrounds it.",
+        },
+        {
+          imgSrc: "https://i.imgur.com/LPOc4Ql.jpg",
+          imgAlt: "Great Room",
+          title: "Great Room",
+          subtitle: "#open-spaces",
+          text: "Nothing tops going home to family, eating good food and relaxing in an open space.",
+        },
+        {
+          imgSrc: "https://i.imgur.com/ymtJeb6.jpg",
+          imgAlt: "Kitchen & Bathroom",
+          title: "Kitchen & Bathroom",
+          subtitle: "#egyptian-blue",
+          text: "Color is the place where mind meets the space.",
+        },
+      ],
     };
   },
 };
@@ -103,6 +142,7 @@ export default {
 <style scoped>
 #app {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #595959;
 }
 .carousel-overlay {
   position: absolute;
@@ -114,7 +154,6 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  color: #595959;
 }
 .carousel-overlay-explore {
   background-color: rgba(255, 255, 255, 0.8);
@@ -151,6 +190,21 @@ export default {
   text-align: justify;
   padding: 30px;
   margin-top: 15px;
+}
+.case-studies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 15px;
+  padding: 15px;
+}
+@media (max-width: 990px) {
+  .case-studies {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .how-it-works-items {
   display: flex;
@@ -232,6 +286,6 @@ export default {
   background-size: auto;
   background-position: center;
   background-size: cover;
-  padding: 30px
+  padding: 30px;
 }
 </style>
