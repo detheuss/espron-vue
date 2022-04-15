@@ -4,7 +4,7 @@
             toggleable="sm"
             type="light"
             variant="fade"
-            class="espron-navbar"
+            class="navbar fixed-top espron-navbar"
         >
             <b-navbar-brand href="#"><img src="../assets/Logo/logo-trans-horizontal.png" class="espron-logo" alt=""></b-navbar-brand>
             <b-collapse id="nav-collapse" is-nav>
@@ -28,9 +28,12 @@
 }
 .espron-navbar {
     background-color: rgba(255, 255, 255, 0.7);
-    position: absolute;
+    /* position: absolute;
     z-index: 1000;
     width: 100%;
-    margin: 0;
+    margin: 0; */
+}
+.navbar-toggler {
+    border: none;
 }
 </style>
