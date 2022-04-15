@@ -53,7 +53,7 @@
           <h5>Our 3 Step Process -</h5>
           <h3>How It Works</h3>
           <div class="how-it-works-items">
-            <div class="how-it-works-item one">
+            <div class="how-it-works-item">
               <b-icon class="how-it-works-icon" icon="people-fill" scale="1" />
               <h4 :style="{ textAlign: 'left' }">First Meeting & Designs</h4>
               <p class="mt-3">
@@ -64,7 +64,7 @@
                 receive multiple designs for approval (we offer a 2D layout plan).
               </p>
             </div>
-            <div class="how-it-works-item two">
+            <div class="how-it-works-item">
               <b-icon class="how-it-works-icon" icon="eye-fill" scale="1" />
               <h4 :style="{ textAlign: 'left' }">Detailed Visuals</h4>
               <p class="mt-3">
@@ -74,7 +74,7 @@
                 your future interior, but also experience it.
               </p>
             </div>
-            <div class="how-it-works-item three">
+            <div class="how-it-works-item">
               <b-icon class="how-it-works-icon" icon="folder-fill" scale="1" />
               <h4 :style="{ textAlign: 'left' }">Drafting Documentation</h4>
               <p class="mt-3">
@@ -250,14 +250,6 @@ export default {
 .how-it-works-item-heading {
   text-align: center;
 }
-.one {
-}
-/* .two {
-  background-image: url("./assets/images/numbers/2.png");
-}
-.three {
-  background-image: url("./assets/images/numbers/3.png");
-} */
 .carousel-item-1 {
   height: 70vh;
   background-image: url("../assets/Logo/logo-trans.png");
