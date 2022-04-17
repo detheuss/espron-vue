@@ -1,17 +1,15 @@
 <template>
-  <div>
+  <div class="content">
     <b-container>
       <div
         v-if="caseStudy"
         class="case-study-content"
       >
-        <img
-          :src="caseStudy.titleImg.srcM"
-          :alt="caseStudy.title"
-          class="title-image"
-        >
-        <p></p>
+        <p>{{caseStudy.quote}}</p>
         <h1>{{caseStudy.title}}</h1>
+        <p>{{caseStudy.text}}</p>
+        <ImageGallery :images="caseStudy.gallery" />
+
       </div>
       <div v-else>
         <h5>We are sorry -</h5>
@@ -26,7 +24,11 @@
 
 <script>
   import caseStudies from "../data/caseStudies.js";
+  import ImageGallery from "./ImageGallery.vue";
   export default {
+    components: {
+      ImageGallery,
+    },
     data() {
       return {
         caseStudies: caseStudies,

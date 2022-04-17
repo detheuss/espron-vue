@@ -13,7 +13,7 @@
             :key="item.id"
             overlay
             :title="item.title"
-            :img-src="item.titleImg.srcS"
+            :img-src="item.thumbnail.srcS"
             :img-alt="item.title"
             img-top
             class="case-study-card"
@@ -46,7 +46,7 @@
   .case-study-card {
     width: 340px;
     height: auto;
-    color: #595959;
+    color: white;
     margin: 0 !important;
     padding: 15px;
     border: none;
@@ -56,7 +56,7 @@
     color: white;
   }
   .case-study-card img {
-    filter: opacity(0.6);
+    filter: contrast(0.7) opacity(0.8);;
   }
   .case-study-card:hover img {
     filter: contrast(0.7) opacity(1);
