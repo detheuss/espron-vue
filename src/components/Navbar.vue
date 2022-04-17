@@ -41,7 +41,14 @@
             Case Studies
           </router-link>
         </b-nav-item>
-        <b-nav-item href="#">Contact</b-nav-item>
+        <b-nav-item>
+          <router-link
+            to="/contact-us"
+            class="espron-nav-item"
+          >
+            Contact Us
+          </router-link>
+        </b-nav-item>
       </b-navbar-nav>
     </b-collapse>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -56,9 +63,9 @@
   .espron-navbar {
     background-color: rgba(255, 255, 255, 0.7);
     /* position: absolute;
-                                      z-index: 1000;
-                                      width: 100%;
-                                      margin: 0; */
+                                            z-index: 1000;
+                                            width: 100%;
+                                            margin: 0; */
   }
   .espron-nav-item {
     color: #797979;
