@@ -42,7 +42,7 @@ export default {
 <style scoped>
 img {
   filter: opacity(1) contrast(0.5);
-  width: 360px;
+  width: 100%;
   height: 270px;
   border: none;
 }

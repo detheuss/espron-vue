@@ -13,9 +13,12 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style>
 #app {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: #595959;
 }
+.content {
+    margin-top: 70px;
+  }
 </style>

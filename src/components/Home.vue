@@ -304,8 +304,4 @@ export default {
   background-size: cover;
   padding: 30px;
 }
-.small-carousel-item {
-  border: none !important;
-  background-color: white;
-}
 </style>
