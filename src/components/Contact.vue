@@ -20,7 +20,7 @@
             <h5>info@espronprojekt.com</h5>
           </div>
         </div>
-        
+
         <div>
           <a
             href="https://www.linkedin.com/company/espron-projekt/"
@@ -64,7 +64,7 @@
   @media (max-width: 990px) {
     .espron-business-card {
       flex-direction: column;
-     
+
       align-items: baseline;
     }
   }

@@ -62,10 +62,6 @@
   }
   .espron-navbar {
     background-color: rgba(255, 255, 255, 0.7);
-    /* position: absolute;
-                                            z-index: 1000;
-                                            width: 100%;
-                                            margin: 0; */
   }
   .espron-nav-item {
     color: #797979;
