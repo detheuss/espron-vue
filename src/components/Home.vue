@@ -18,7 +18,7 @@
     </div>
     <div>
       <b-container>
-        <div class="text-block">
+        <div class="text-block" id="aboutUs">
           <h3>About us -</h3>
           <p>
             We are a growing company operating in the construction field mainly focusing on
@@ -49,7 +49,7 @@
             />
           </slide>
         </carousel-3d>
-        <div class="text-block pb-0 mb-0 mt-5">
+        <div class="text-block pb-0 mb-0 mt-5" id="howItWorks">
           <h5>Our 3 Step Process -</h5>
           <h3>How It Works</h3>
           <div class="how-it-works-items">

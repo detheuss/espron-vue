@@ -19,7 +19,7 @@
             class="case-study-card"
           >
             <b-card-text>
-              Some quick example text to build on the card title and make up the bulk of the card's content.
+              {{item.text}}
             </b-card-text>
           </b-card>
         </router-link>
@@ -56,7 +56,7 @@
     color: white;
   }
   .case-study-card img {
-    filter: contrast(0.7) opacity(0.8);;
+    filter: contrast(0.7) opacity(0.8);
   }
   .case-study-card:hover img {
     filter: contrast(0.7) opacity(1);

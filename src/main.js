@@ -2,7 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import Carousel3d from "vue-carousel-3d";
-import VuePictureSwipe from 'vue-picture-swipe';
+import VuePictureSwipe from "vue-picture-swipe";
 import VueRouter from "vue-router";
 import routes from "./routes.js";
 
@@ -16,11 +16,19 @@ Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 Vue.use(Carousel3d);
 Vue.use(VueRouter);
-Vue.component('vue-picture-swipe', VuePictureSwipe);
+Vue.component("vue-picture-swipe", VuePictureSwipe);
 
 const router = new VueRouter({
   mode: "history",
   routes,
+  scrollBehavior: function (to) {
+    if (to.hash) {
+      return {
+        selector: to.hash,
+        behavior: "smooth"
+      };
+    }
+  },
 });
 
 // eslint-disable-next-line no-unused-vars
