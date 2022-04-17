@@ -13,7 +13,7 @@
             :key="item.id"
             overlay
             :title="item.title"
-            :img-src="item.thumbnail.srcS"
+            :img-src="item.thumbImgSrc"
             :img-alt="item.title"
             img-top
             class="case-study-card"

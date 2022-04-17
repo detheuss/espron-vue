@@ -2,9 +2,7 @@ export default [
   {
     id: "1",
     title: "Project Family House",
-    thumbnail: {
-      srcS: "https://panoptes-uploads.zooniverse.org/project_attached_image/ddd67d1f-2371-4f8e-be2a-1b668a1e20f9.jpeg",
-    },
+    thumbImgSrc: "https://panoptes-uploads.zooniverse.org/project_attached_image/ddd67d1f-2371-4f8e-be2a-1b668a1e20f9.jpeg",
     quote: "An old thing becomes new if you detach it from what usually surrounds it.",
     gallery: [
       // img 1
